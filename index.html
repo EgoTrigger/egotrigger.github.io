@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="EgoTrigger, leverages audio cues from the microphone to selectively activate power-intensive cameras, enabling efficient sensing while preserving substantial utility for human memory enhancement.">
+  <meta name="keywords" content="Smart glasses, Microphone, Camera, Multimodal Sensing, Artificial Intelligence, Energy efficient computing">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EgoTrigger: Toward Audio-Driven Image Capture for Human Memory Enhancement in All-Day Energy-Efficient Smart Glasses
+  </title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">EgoTrigger: Toward Audio-Driven Image Capture for Human Memory Enhancement in All-Day Energy-Efficient Smart Glasses</h1>
+          <h2 class="is-size-4 conference-title">ISMAR 2025</h2>
+          <h2 class="is-size-4 conference-title" style="color: red;">TVCG Journal Paper [Top 8% - 60 of 762 Submissions]</h2>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://www.cs.unc.edu/~akshaypa/">Akshay Paruchuri</a><sup>1</sup>,</span>
+            <span class="author-block">
+              Sinan Hersek<sup>2</sup>,</span>
+            <span class="author-block">
+              Lavisha Aggarwal<sup>1</sup>,</span>
+            <span class="author-block">
+              Qiao Yang<sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://xliucs.github.io/">Xin Liu</a><sup>1</sup>,</span>
+            <span class="author-block">
+              Achin Kulshrestha<sup>1</sup>,</span>
+            <span class="author-block">
+              Andrea Colaco<sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://henryfuchs.web.unc.edu/">Henry Fuchs</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://research.google/people/ishanchatterjee/">Ishan Chatterjee</a><sup>1</sup>,</span>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>UNC Chapel Hill,</span>
+            <span class="author-block"><sup>2</sup>Google</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2508.01915"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/yahskapar/EgoTrigger"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <center><img src="./static/images/EgoTrigger_Teaser_Figure_V1.png"/></center>
+      <h2 class="subtitle has-text-centered">
+        EgoTrigger uses a lightweight audio classification model and a custom classification head to trigger image capture from hand-object interaction (HOI) audio cues, such as the sound of a medication bottle being opened. Our approach is capable of using 54% fewer frames on average while maintaining or exceeding performance on an episodic memory task, signifying potential for energy-efficient usage as a part of all-day smart glasses capable of human memory enhancement.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            All-day smart glasses are likely to emerge as platforms capable of continuous contextual sensing, uniquely positioning them for unprecedented assistance in our daily lives. Integrating the multi-modal AI agents required for human memory enhancement while performing continuous sensing, however, presents a major energy efficiency challenge for all-day usage. Achieving this balance requires intelligent, context-aware sensor management. Our approach, EgoTrigger, leverages audio cues from the microphone to selectively activate power-intensive cameras, enabling efficient sensing while preserving substantial utility for human memory enhancement. EgoTrigger uses a lightweight audio model (YAMNet) and a custom classification head to trigger image capture from hand-object interaction (HOI) audio cues, such as the sound of a drawer opening or a medication bottle being opened.
+          </p>
+          <p>
+            In addition to evaluating on the QA-Ego4D dataset, we introduce and evaluate on the Human Memory Enhancement Question-Answer (HME-QA) dataset. Our dataset contains 340 human-annotated first-person QA pairs from full-length Ego4D videos that were curated to ensure that they contained audio, focusing on HOI moments critical for contextual understanding and memory. Our results show EgoTrigger can use 54% fewer frames on average, significantly saving energy in both power-hungry sensing components (e.g., cameras) and downstream operations (e.g., wireless transmission), while achieving comparable performance on datasets for an episodic memory task. We believe this context-aware triggering strategy represents a promising direction for enabling energy-efficient, functional smart glasses capable of all-day use -- supporting applications like helping users recall where they placed their keys or information about their routine activities (e.g., taking medications).
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Architecture</h2>
+        <div class="content has-text-justified">
+          <p>
+            <center><img src="./static/images/EgoTrigger_Arch_Figure_V0.png" 
+              width="900" 
+              height="700" /></center>
+            Our approach focuses on audio from smart glasses that are processed by a pre-trained YAMNet model to extract 1024-dimensional embeddings, which are passed through a 4-layer dense network that serves as our custom, binary classification head.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Key Results</h2>
+        <div class="content has-text-justified">
+          <p>
+            <center><img src="./static/images/EgoTrigger_QA_Results_Examples_V0.png"/></center>
+             Sample question-answer outcomes on QA-Ego4D (left) and HME-QA (right) using different video sampling strategies. EgoTrigger variants preserve key visual content necessary for correct answers while significantly reducing the number of frames, compared to full or naively decimated baselines.
+            <center><img src="./static/images/accuracy_versus_frame_reduction_tradeoff.png"
+            width="600" 
+            height="400" /></center>
+             EgoTrigger variants (ET-1s and ET-Hyst.) lie close to the Pareto frontier, balancing QA accuracy with reduced frame count. Results are shown for both HME-QA and QA-Ego4D datasets, with dataset indicated by marker shape (circles for HME-QA, squares for QA-Ego4D) and estimated bitrate reflected by marker size. Outlined markers highlight our proposed methods. Variant ET-1s in particular reduces frame usage and subsequently bitrate while preserving accuracy close to full-frame baselines.
+             <br><br>
+             Please refer to our <a href="https://arxiv.org/abs/2508.01915">pre-print</a> for the full results, including ablation studies.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Additional Materials</h2>
+        <div class="content has-text-justified">
+          <p>
+            We will release our code and access to the HME-QA dataset annotations through our <a href="https://github.com/yahskapar/EgoTrigger">GitHub repository</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>Check back here soon for a BibTeX citation!</code></pre>
+  </div>
+</section>
+
+<!-- <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{park2021nerfies,
+  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
+  title     = {Nerfies: Deformable Neural Radiance Fields},
+  journal   = {ICCV},
+  year      = {2021},
+}</code></pre>
+  </div>
+</section> -->
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This websites utilizes source code from <a
+              href="https://github.com/nerfies/nerfies.github.io">here</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
